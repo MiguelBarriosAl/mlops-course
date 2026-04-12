@@ -12,12 +12,14 @@ from pydantic import BaseModel, ValidationError
 class HousingData(BaseModel):
     """Pydantic model representing a single row of housing data."""
 
-    MedInc: Optional[float]
-    HouseAge: float
-    AveRooms: Optional[float]
-    Population: float
-    Latitude: float
-    Longitude: float
+    MedInc: Optional[float]       # median income in block group
+    HouseAge: float               # median house age in block group
+    AveRooms: Optional[float]     # average number of rooms per household
+    AveBedrms: Optional[float]    # average number of bedrooms per household
+    Population: float             # block group population
+    AveOccup: Optional[float]     # average number of household members
+    Latitude: float               # block group latitude
+    Longitude: float              # block group longitude
 
 
 def validate_row(row: dict, index: int) -> bool:
