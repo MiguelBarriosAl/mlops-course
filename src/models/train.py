@@ -179,6 +179,7 @@ def run_experiment(model, model_type: str, params: dict,
             sk_model=model,
             artifact_path="model",
             registered_model_name=None,
+            input_example=X_train.head(5),
         )
         logger.info("[%s] Model artifact logged.", model_type)
 
