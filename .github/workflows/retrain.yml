@@ -38,9 +38,9 @@ jobs:
       # Train LinearRegression and RandomForest; log runs to MLflow
       - name: Train models
         run: python src/models/train.py
-      # Run quality gate: exit 1 if rmse >= 0.6 or r2 <= 0.7
-      - name: Evaluate model
-        run: python src/models/evaluate_model.py
       # Register the best run in the MLflow Model Registry
       - name: Register model
         run: python src/models/register_model.py
+      # Run quality gate: exit 1 if rmse >= 0.6 or r2 <= 0.7
+      - name: Evaluate model
+        run: python src/models/evaluate_model.py
