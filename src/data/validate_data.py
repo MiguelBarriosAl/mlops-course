@@ -64,7 +64,7 @@ def validate_dataset(df: pd.DataFrame) -> None:
 
 def main():
     """Load the raw dataset and run validation."""
-    path = "data/raw/housing_noisy.csv"
+    path = "data/raw/housing_dataset.csv"
     print(f"Loading dataset from: {path}")
     df = pd.read_csv(path)
     validate_dataset(df)
