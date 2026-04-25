@@ -7,7 +7,7 @@ name: CI — Training Pipeline
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   pipeline:
