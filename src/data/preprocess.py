@@ -9,7 +9,7 @@ import pandas as pd
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[2]
-RAW_PATH = BASE_DIR / "data" / "raw" / "housing_noisy.csv"
+RAW_PATH = BASE_DIR / "data" / "raw" / "housing_dataset.csv"
 PROCESSED_PATH = BASE_DIR / "data" / "processed" / "train_v1.csv"
 
 
