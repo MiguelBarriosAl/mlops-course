@@ -4,7 +4,6 @@ data/*
 ## Ignore all pychache files all projects
 
 src/__pycache__/
-s
 __pycache__/
 *.pyc
 *.pyo
